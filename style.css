@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    user-select: none;
+    z-index: 999999;
+}
+
+.sticky {
+    background-color: crimson;
+    position: fixed;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0px 80px;
+    margin: auto;
+    margin-left: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+
+.logo a span {
+    color: crimson;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.sticky .logo a span {
+    color: #fff;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 15px;
+}
+
+.menu li a:hover {
+    transition: 0.4s ease;
+    color: crimson;
+}
+
+.sticky .menu li a:hover {
+    color: #fff;
+}
+
+/* Menu button Styling */
+
+.menu-btn {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/* HOME SECTION STYLING */
+
+.home {
+    display: flex;
+    background: url(assets/developer2.png) no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    user-select: none;
+}
+
+.home .max-width {
+    margin: auto 0 auto 0;
+}
+
+.home .home-content .text-1 {
+    font-size: 24px;
+}
+
+.home .home-content .text-2 {
+    font-size: 70px;
+    margin-left: -3px;
+    font-weight: 500;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.home .home-content .text-3 span {
+    color: crimson;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.home-content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: crimson;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    transition: all;
+}
+
+.home-content a:hover {
+    background: none;
+    color: crimson;
+}
+
+/* About Section Styling */
+
+.about, .services, .skills,.contacts {
+    padding: 80px 0px;
+}
+
+.title {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    padding: 20px 0px;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    width: 162px;
+    height: 3px;
+    transform: translateY(50px);
+    background-color: #111;
+}
+
+.about .title::after {
+    content: "Who I am";
+    position: absolute;
+    margin: auto;
+    transform: translate(-125px, 40px);
+    font-size: 18px;
+    background-color: #fff;
+    color: crimson;
+    width: 100px;
+}
+
+.left img {
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.about .about-content, 
+.services .services-content, 
+.skills .skills-content,
+.contacts .contacts-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.about .left {
+    width: 45%;
+}
+
+.about .right {
+    width: 55%;
+}
+
+.about .right .text{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.about .right .text span{
+    color: crimson;
+}
+
+.about .right p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about .right a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: crimson;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    transition: all;
+    font-weight: 500;
+}
+
+.about .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* Services Section Styling */
+
+.services, .teams, .contacts{
+    background-color: #111;
+    color: #fff;
+}
+
+.services .title::before {
+    content: "";
+    position: absolute;
+    width: 162px;
+    height: 3px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.services .title::after {
+    content: "What i serve";
+    position: absolute;
+    transform: translate(-150px, 40px);
+    font-size: 18px;
+    background-color: #111;
+    color: crimson;
+    width: 110px;
+}
+
+.services .services-content{
+    display: flex;
+}
+
+.services .services-content .card{
+    background-color: #222;
+    text-align: center;
+    width: 32%;
+    border-radius: 10px;
+    padding: 20px 15px;
+    transition: color 0.3s ease;
+}
+
+.services .services-content .card:hover{
+    background-color: crimson;
+}
+
+.services .services-content .card:hover i{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.services .services-content .card i{
+    font-size: 50px;
+    color: crimson;
+}
+
+.services .services-content .card .bold{
+    font-weight: bold;
+}
+
+.services .services-content .card .box{
+    padding: 5px 30px;
+}
+
+.services .services-content .card .box .text,
+.services .services-content .card .box p{
+    padding: 15px 0px;
+}
+
+.services .services-content .card .box .text{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.services .services-content .card .box p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.services .services-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card .box:hover{
+    transform: scale(1.05);
+}
+
+/* Skill Section Styling */
+
+.skills .title::before {
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 3px;
+    transform: translateY(50px);
+    background-color: #111;
+}
+
+.skills .title::after {
+    content: "What i know";
+    position: absolute;
+    transform: translate(-125px, 40px);
+    font-size: 18px;
+    background-color: #fff;
+    color: crimson;
+    width: 107px;
+}
+
+.skills .left, .contacts .left{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .right{
+    width: 40%;
+}
+
+.skills .left .text{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.skills .left p{
+    text-align: justify;
+}
+
+.skills .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .right .bars .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.skills .right .bars .info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .right .bars .line{
+    width: 100%;
+    height: 5px;
+    background-color: lightgray;
+    position: relative;
+}
+
+.skills .right .bars .html::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: crimson;
+}
+.skills .right .bars .css::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: crimson;
+}
+.skills .right .bars .js::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: crimson;
+}
+.skills .right .bars .django::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: crimson;
+}
+.skills .right .bars .mysql::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: crimson;
+}
+
+/* Contacts section styling */
+
+.contacts .title::before {
+    content: "";
+    position: absolute;
+    width: 162px;
+    height: 3px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.contacts .title::after {
+    content: "get in touch";
+    position: absolute;
+    transform: translate(-145px, 40px);
+    font-size: 18px;
+    background-color: #111;
+    color: crimson;
+    width: 110px;
+}
+
+.contacts .contacts-content .column {
+    width: calc(50% - 30px);
+}
+
+
+.contacts .contacts-content .left .text,
+.contacts .contacts-content .right .text{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contacts .contacts-content .left p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.contacts .contacts-content .left .icons{
+    margin: 10px 0;
+}
+
+.contacts .contacts-content .left .row{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacts .contacts-content .left .row i{
+    font-size: 25px;
+    color: crimson;
+}
+
+.contacts .contacts-content .left .info{
+    margin-left: 30px;
+}
+
+.contacts .contacts-content .left .info .head{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contacts .contacts-content .left .info .sub-title{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contacts .right form .fields{
+    display: flex;
+}
+
+.contacts .right form .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contacts .right form .name{
+    margin-right: 10px;
+}
+
+.contacts .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contacts .right form .email{
+    margin-left: 10px;
+}
+
+.contacts .right form .field input:focus,
+.contacts .right form .textarea textarea:focus{
+    border: 1px solid lightgrey;
+}
+
+.contacts .right form .field input,
+.contacts .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid crimson;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    transition: all 0.2s ease-in;
+}
+ 
+.contacts .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contacts .right form .button{
+    height: 47px;
+    width: 170px;
+}
+
+.contacts .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contacts .right form .button button:hover{
+    background: none;
+    color: crimson;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+Footer{
+    background-color: #111;
+    color: #fff;
+    padding: 20px 23px;
+    text-align: center;
+    font-size: 15px;
+}
+footer span{
+    font-family: 'Ubuntu', sans-serif;
+}
+Footer a{
+    text-decoration: none;
+    color: crimson;
+}
+
+Footer a:hover{
+    text-decoration: underline;
+}
+
+.gototop{
+    position: fixed;
+    font-size: 50px;
+    top: 85%;
+    left: 88%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hide{
+    display: none;
+    transition: all 0.3s ease;
+}
+.gototop span{
+    color: crimson;
+    opacity: 0.7;
+}
+
+/* Media query for Resposive */
+
+@media (max-width: 1192px) {
+
+    .services .services-content .card i{
+        font-size: 40px;
+        color: crimson;
+    }
+    .services .services-content .card .box{
+        padding: 5px 25px;
+    }
+    
+    .services .services-content .card .box .text,
+    .services .services-content .card .box p{
+        padding: 15px 0px;
+    }
+    
+    .services .services-content .card .box .text{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .services .services-content .card .box p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+@media (max-width: 870px) {
+
+    .services .services-content .card i{
+        font-size: 35px;
+        color: crimson;
+    }
+
+    .services .services-content .card .box .text{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .services .services-content .card .box p{
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+
+
+@media (max-width : 1115px) {
+    .left img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .right .text{
+        font-size: 22px;
+    }
+
+    .about .right p,.skills .left p, .contacts .contacts-content .left p{
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+
+@media (max-width : 970px) {
+    .max-width {
+        padding: 0px 60px;
+    }
+
+    .left img {
+        height: 310px;
+        width: 310px;
+    }
+
+    .right .text{
+        font-size: 18px;
+    }
+
+    .about .right p, .skills .left p, .contacts .contacts-content .left p{
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+
+@media (max-width : 830px) {
+    .menu-btn {
+        display: block;
+        z-index: 111;
+    }
+    
+    .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
+    }
+
+    .menu li {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 65px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 35px;
+
+    }
+
+    .home .home-content .text-3 span {
+        font-size: 35px;
+    }
+
+    .home-content a {
+        font-size: 20px;
+        padding: 9px 25px;
+    }
+
+    .column{
+        width: 100%;
+    }
+    
+    .skills .left, .about .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .right{
+        flex: 100%;
+    }
+
+    .services .services-content .card i{
+        font-size: 30px;
+        color: crimson;
+    }
+    .services .services-content .card .box{
+        padding: 5px 10px;
+    }
+    
+    .services .services-content .card .box .text,
+    .services .services-content .card .box p{
+        padding: 15px 0px;
+    }
+
+    .skills .skills-content .column,
+    .contacts .contacts-content .column{
+        width: 100%;
+    }
+}
+
+@media (max-width : 690px) {
+    .max-width {
+        padding: 0px 40px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+
+    .home .home-content .text-3 span {
+        font-size: 30px;
+    }
+
+    .home-content a {
+        font-size: 17px;
+    }
+
+    .services .services-content .card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width : 388px) {
+    .max-width {
+        padding: 0px 20px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 35px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
+
+    .home .home-content .text-3 span {
+        font-size: 20px;
+    }
+
+    Footer{
+        font-size: 13px;
+    }
+}
