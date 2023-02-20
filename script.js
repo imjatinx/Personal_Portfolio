@@ -1,9 +1,4 @@
 // For Srolling navbar
-onscroll = function () {
-  scroll_navbar()
-  scroll_top()
-};
-
 function scroll_navbar() {
   if (document.documentElement.scrollTop > 20) {
     document.getElementById("custom_navbar").className = "sticky";
@@ -19,6 +14,12 @@ function scroll_top() {
     document.getElementById("gototop").className = "hide";
   }
 }
+
+onscroll = function () {
+  scroll_navbar()
+  scroll_top()
+};
+
 
 // typing script
 

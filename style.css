@@ -8,7 +8,20 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-html{
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: crimson;
+    border-radius: 10px;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -147,7 +160,10 @@ html{
 
 /* About Section Styling */
 
-.about, .services, .skills,.contacts {
+.about,
+.services,
+.skills,
+.contacts {
     padding: 80px 0px;
 }
 
@@ -187,10 +203,10 @@ html{
     object-fit: cover;
 }
 
-.about .about-content, 
-.services .services-content, 
+.about .about-content,
+.services .services-content,
 .skills .skills-content,
-.contacts .contacts-content{
+.contacts .contacts-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -207,22 +223,22 @@ html{
     width: 55%;
 }
 
-.about .right .text{
+.about .right .text {
     margin-bottom: 10px;
     font-size: 25px;
 }
 
-.about .right .text span{
+.about .right .text span {
     color: crimson;
 }
 
-.about .right p{
+.about .right p {
     text-align: justify;
     font-size: 20px;
     font-weight: 500;
 }
 
-.about .right a{
+.about .right a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -236,14 +252,16 @@ html{
     font-weight: 500;
 }
 
-.about .right a:hover{
+.about .right a:hover {
     color: crimson;
     background: none;
 }
 
 /* Services Section Styling */
 
-.services, .teams, .contacts{
+.services,
+.teams,
+.contacts {
     background-color: #111;
     color: #fff;
 }
@@ -269,11 +287,11 @@ html{
     width: 110px;
 }
 
-.services .services-content{
+.services .services-content {
     display: flex;
 }
 
-.services .services-content .card{
+.services .services-content .card {
     background-color: #222;
     text-align: center;
     width: 32%;
@@ -282,48 +300,48 @@ html{
     transition: color 0.3s ease;
 }
 
-.services .services-content .card:hover{
+.services .services-content .card:hover {
     background-color: crimson;
 }
 
-.services .services-content .card:hover i{
+.services .services-content .card:hover i {
     color: #fff;
     transition: color 0.3s ease;
 }
 
-.services .services-content .card i{
+.services .services-content .card i {
     font-size: 50px;
     color: crimson;
 }
 
-.services .services-content .card .bold{
+.services .services-content .card .bold {
     font-weight: bold;
 }
 
-.services .services-content .card .box{
+.services .services-content .card .box {
     padding: 5px 30px;
 }
 
 .services .services-content .card .box .text,
-.services .services-content .card .box p{
+.services .services-content .card .box p {
     padding: 15px 0px;
 }
 
-.services .services-content .card .box .text{
+.services .services-content .card .box .text {
     font-size: 25px;
     font-weight: 500;
 }
 
-.services .services-content .card .box p{
+.services .services-content .card .box p {
     font-size: 17px;
     font-weight: 500;
 }
 
-.services .services-content .card .box{
+.services .services-content .card .box {
     transition: all 0.3s ease;
 }
 
-.services .services-content .card .box:hover{
+.services .services-content .card .box:hover {
     transform: scale(1.05);
 }
 
@@ -348,78 +366,83 @@ html{
     width: 107px;
 }
 
-.skills .left, .contacts .left{
+.skills .left,
+.contacts .left {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.skills .right{
+.skills .right {
     width: 40%;
 }
 
-.skills .left .text{
+.skills .left .text {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.skills .left p{
+.skills .left p {
     text-align: justify;
 }
 
-.skills .right .bars{
+.skills .right .bars {
     margin-bottom: 15px;
 }
 
-.skills .right .bars .info{
+.skills .right .bars .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
 }
 
-.skills .right .bars .info span{
+.skills .right .bars .info span {
     font-weight: 500;
     font-size: 18px;
 }
 
-.skills .right .bars .line{
+.skills .right .bars .line {
     width: 100%;
     height: 5px;
     background-color: lightgray;
     position: relative;
 }
 
-.skills .right .bars .html::before{
+.skills .right .bars .html::before {
     content: "";
     position: absolute;
     width: 90%;
     height: 100%;
     background-color: crimson;
 }
-.skills .right .bars .css::before{
+
+.skills .right .bars .reactjs::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: crimson;
+}
+
+.skills .right .bars .sql::before {
     content: "";
     position: absolute;
     width: 70%;
     height: 100%;
     background-color: crimson;
 }
-.skills .right .bars .js::before{
+
+.skills .right .bars .django::before {
     content: "";
     position: absolute;
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: crimson;
 }
-.skills .right .bars .django::before{
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: crimson;
-}
-.skills .right .bars .mysql::before{
+
+.skills .right .bars .expressjs::before {
     content: "";
     position: absolute;
     width: 60%;
@@ -456,78 +479,78 @@ html{
 
 
 .contacts .contacts-content .left .text,
-.contacts .contacts-content .right .text{
+.contacts .contacts-content .right .text {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-.contacts .contacts-content .left p{
+.contacts .contacts-content .left p {
     text-align: justify;
     margin-bottom: 15px;
 }
 
-.contacts .contacts-content .left .icons{
+.contacts .contacts-content .left .icons {
     margin: 10px 0;
 }
 
-.contacts .contacts-content .left .row{
+.contacts .contacts-content .left .row {
     display: flex;
-    height: 50px;
+    /* height: 50px; */
     align-items: center;
     margin-bottom: 10px;
 }
 
-.contacts .contacts-content .left .row i{
+.contacts .contacts-content .left .row i {
     font-size: 25px;
     color: crimson;
 }
 
-.contacts .contacts-content .left .info{
+.contacts .contacts-content .left .info {
     margin-left: 30px;
 }
 
-.contacts .contacts-content .left .info .head{
+.contacts .contacts-content .left .info .head {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.contacts .contacts-content .left .info .sub-title{
+.contacts .contacts-content .left .info .sub-title {
     color: #fff;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.contacts .right form .fields{
+.contacts .right form .fields {
     display: flex;
 }
 
-.contacts .right form .field{
+.contacts .right form .field {
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
 
-.contacts .right form .name{
+.contacts .right form .name {
     margin-right: 10px;
 }
 
-.contacts .right form .textarea{
+.contacts .right form .textarea {
     height: 80px;
     width: 100%;
 }
 
-.contacts .right form .email{
+.contacts .right form .email {
     margin-left: 10px;
 }
 
 .contacts .right form .field input:focus,
-.contacts .right form .textarea textarea:focus{
+.contacts .right form .textarea textarea:focus {
     border: 1px solid lightgrey;
 }
 
 .contacts .right form .field input,
-.contacts .right form .textarea textarea{
+.contacts .right form .textarea textarea {
     height: 100%;
     width: 100%;
     border: 1px solid crimson;
@@ -537,18 +560,18 @@ html{
     font-size: 17px;
     transition: all 0.2s ease-in;
 }
- 
-.contacts .right form .textarea textarea{
+
+.contacts .right form .textarea textarea {
     padding-top: 10px;
     resize: none;
 }
 
-.contacts .right form .button{
+.contacts .right form .button {
     height: 47px;
     width: 170px;
 }
 
-.contacts .right form .button button{
+.contacts .right form .button button {
     width: 100%;
     height: 100%;
     border: 2px solid crimson;
@@ -560,33 +583,40 @@ html{
     transition: all 0.3s ease;
 }
 
-.contacts .right form .button button:hover{
+.contacts .right form .button button:hover {
     background: none;
     color: crimson;
     cursor: pointer;
 }
 
 /* Footer Styling */
-Footer{
+Footer {
     background-color: #111;
     color: #fff;
     padding: 20px 23px;
     text-align: center;
     font-size: 15px;
 }
-footer span{
+
+footer span {
     font-family: 'Ubuntu', sans-serif;
 }
-Footer a{
+
+Footer a {
     text-decoration: none;
     color: crimson;
 }
 
-Footer a:hover{
+Footer a:hover {
     text-decoration: underline;
 }
 
-.gototop{
+.hide {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.gototop {
     position: fixed;
     font-size: 50px;
     top: 85%;
@@ -595,11 +625,7 @@ Footer a:hover{
     transition: all 0.3s ease;
 }
 
-.hide{
-    display: none;
-    transition: all 0.3s ease;
-}
-.gototop span{
+.gototop span {
     color: crimson;
     opacity: 0.7;
 }
@@ -608,42 +634,44 @@ Footer a:hover{
 
 @media (max-width: 1192px) {
 
-    .services .services-content .card i{
+    .services .services-content .card i {
         font-size: 40px;
         color: crimson;
     }
-    .services .services-content .card .box{
+
+    .services .services-content .card .box {
         padding: 5px 25px;
     }
-    
+
     .services .services-content .card .box .text,
-    .services .services-content .card .box p{
+    .services .services-content .card .box p {
         padding: 15px 0px;
     }
-    
-    .services .services-content .card .box .text{
+
+    .services .services-content .card .box .text {
         font-size: 22px;
         font-weight: 500;
     }
-    
-    .services .services-content .card .box p{
+
+    .services .services-content .card .box p {
         font-size: 15px;
         font-weight: 400;
     }
 }
+
 @media (max-width: 870px) {
 
-    .services .services-content .card i{
+    .services .services-content .card i {
         font-size: 35px;
         color: crimson;
     }
 
-    .services .services-content .card .box .text{
+    .services .services-content .card .box .text {
         font-size: 18px;
         font-weight: 500;
     }
 
-    .services .services-content .card .box p{
+    .services .services-content .card .box p {
         font-size: 13px;
         font-weight: 400;
     }
@@ -656,11 +684,13 @@ Footer a:hover{
         width: 350px;
     }
 
-    .right .text{
+    .right .text {
         font-size: 22px;
     }
 
-    .about .right p,.skills .left p, .contacts .contacts-content .left p{
+    .about .right p,
+    .skills .left p,
+    .contacts .contacts-content .left p {
         text-align: justify;
         font-size: 18px;
     }
@@ -676,11 +706,13 @@ Footer a:hover{
         width: 310px;
     }
 
-    .right .text{
+    .right .text {
         font-size: 18px;
     }
 
-    .about .right p, .skills .left p, .contacts .contacts-content .left p{
+    .about .right p,
+    .skills .left p,
+    .contacts .contacts-content .left p {
         text-align: justify;
         font-size: 18px;
     }
@@ -691,7 +723,7 @@ Footer a:hover{
         display: block;
         z-index: 111;
     }
-    
+
     .menu {
         position: fixed;
         height: 100vh;
@@ -727,35 +759,37 @@ Footer a:hover{
         padding: 9px 25px;
     }
 
-    .column{
+    .column {
         width: 100%;
     }
-    
-    .skills .left, .about .left{
+
+    .skills .left,
+    .about .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
 
-    .right{
+    .right {
         flex: 100%;
     }
 
-    .services .services-content .card i{
+    .services .services-content .card i {
         font-size: 30px;
         color: crimson;
     }
-    .services .services-content .card .box{
+
+    .services .services-content .card .box {
         padding: 5px 10px;
     }
-    
+
     .services .services-content .card .box .text,
-    .services .services-content .card .box p{
+    .services .services-content .card .box p {
         padding: 15px 0px;
     }
 
     .skills .skills-content .column,
-    .contacts .contacts-content .column{
+    .contacts .contacts-content .column {
         width: 100%;
     }
 }
@@ -781,7 +815,7 @@ Footer a:hover{
         font-size: 17px;
     }
 
-    .services .services-content .card{
+    .services .services-content .card {
         width: 100%;
         margin-bottom: 15px;
     }
@@ -804,7 +838,7 @@ Footer a:hover{
         font-size: 20px;
     }
 
-    Footer{
+    Footer {
         font-size: 13px;
     }
 }
